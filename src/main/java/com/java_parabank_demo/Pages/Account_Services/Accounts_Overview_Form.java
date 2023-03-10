@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 public class Accounts_Overview_Form {
     WebDriver driver;
 
+    // Add locators for page elements i.e. account num, account balance, available amount, total
+
     public Accounts_Overview_Form (WebDriver driver) {this.driver = driver;}
     By accountsOverviewButton = By.linkText("Accounts Overview");
 

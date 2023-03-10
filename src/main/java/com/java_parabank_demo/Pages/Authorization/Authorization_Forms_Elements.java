@@ -22,4 +22,6 @@ public class Authorization_Forms_Elements {
     public By confirmPWField= By.id("repeatedPassword]");
     public By registerButton= By.xpath("//input[@value='Register']]");
 
+    // Add methods
+
 }
