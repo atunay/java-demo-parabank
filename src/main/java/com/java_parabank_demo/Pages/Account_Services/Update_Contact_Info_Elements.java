@@ -14,5 +14,6 @@ public class Update_Contact_Info_Elements {
     public By editSSNField= By.id("customer.ssn");
     public By updateProfileBtn= By.xpath("//input[@class='button']");
 
+    // Add page methods
 
 }

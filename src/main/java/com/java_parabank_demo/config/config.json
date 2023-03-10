@@ -1,6 +1,5 @@
 {
   "baseURL": "https://parabank.parasoft.com/",
-  "registerURL": "parabank/register.htm",
   "users": [{
     "id": 1,
     "firstName": "Vladimir",
