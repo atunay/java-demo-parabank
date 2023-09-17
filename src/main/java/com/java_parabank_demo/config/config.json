@@ -14,7 +14,7 @@
     "ssn": "12345",
     "username": "papagal",
     "password": "test123",
-    "confirmPW": "test123"},
+    "confirmPW": ""},
     {
       "id": 2,
       "firstName": "Samuil",
