@@ -55,7 +55,7 @@ public class CredentialsAndURLS {
             username = (String) userObj.get("username");
             password = (String) userObj.get("password");
             confirmPW = (String) userObj.get("confirmPW");
-            break;
+            //break;
         }
     }
 
