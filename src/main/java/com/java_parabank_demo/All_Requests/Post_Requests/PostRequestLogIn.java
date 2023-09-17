@@ -1,4 +1,4 @@
-package com.java_parabank_demo.All_Requests.Get_Requests;
+package com.java_parabank_demo.All_Requests.Post_Requests;
 
 import com.java_parabank_demo.api.ResponseReader;
 import com.java_parabank_demo.helpers.CredentialsAndURLS;
