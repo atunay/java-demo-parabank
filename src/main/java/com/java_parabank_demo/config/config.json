@@ -13,7 +13,7 @@
     "ssn": "12345",
     "username": "tuni",
     "password": "test123",
-    "confirmPW": ""},
+    "confirmPW": "test123"},
     {
       "id": 2,
       "firstName": "Samuil",
