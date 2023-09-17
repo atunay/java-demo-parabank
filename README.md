@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # java_parabank_demo
 
 The key functionalities that must be tested on a bank web page:
@@ -33,3 +34,6 @@ In addition to these key functionalities, it is also important to test the follo
 **Performance**: Test that the web page loads quickly and performs well under different conditions.
 
 **Usability**: Confirm that the web page is easy to use and navigate.
+=======
+# java-demo-parabank
+>>>>>>> aae1658 (Initial commit)
