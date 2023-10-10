@@ -14,10 +14,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
 
-public class PostRequestLogIn {
+public class LoginRequest {
 
-        private static final String loginUrl = "https://parabank.parasoft.com/parabank/index.htm";
-        //private static String loginUrl;
+        //private static final String loginUrl = "https://parabank.parasoft.com/parabank/index.htm";
+        private static String loginUrl;
         private static String responseCode;
         private static String responseBody;
         public static String accessToken;
@@ -26,18 +26,21 @@ public class PostRequestLogIn {
 
 
         public static void main(String[] args) throws IOException, ParseException, org.json.simple.parser.ParseException {
-            //String email = "a.tunay+8@gmail.com";
-            //String password = "123456";
+            /*
+            String username = Tuni;
+            String password = Test123;
+             */
 
             CredentialsAndURLS credentialsAndURLS = new CredentialsAndURLS();
             credentialsAndURLS.credentialsAndURLS();
 
 
-            //ReadConfig readConfig = new ReadConfig();
-            //readConfig.readConfigFile();
-            //loginUrl = (readConfig.getQaEnv() + "/authaccount/login");//new
             String username = credentialsAndURLS.getUsername();//new
             String password = credentialsAndURLS.getPassword();//new
+            loginUrl = credentialsAndURLS.getBaseURL(); //new
+            System.out.println("username: " + username);
+            System.out.println("password: " + password);
+            System.out.println("baseURL: " + loginUrl);
 
             try {
                 login(username, password);

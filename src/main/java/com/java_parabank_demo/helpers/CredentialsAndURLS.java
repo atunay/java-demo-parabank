@@ -11,7 +11,7 @@ import java.text.ParseException;
 public class CredentialsAndURLS {
 
     private static String baseURL;
-    private static String registerURL;
+    public static String registerURL;
     private static String users;
     private static Long id;
     private static String firstName;
@@ -26,7 +26,7 @@ public class CredentialsAndURLS {
     private static String password;
     private static String confirmPW;
 
-    public CredentialsAndURLS(){};
+    public CredentialsAndURLS(){}; //class constructor
 
     public static void credentialsAndURLS() throws IOException, ParseException, org.json.simple.parser.ParseException {
         FileReader reader = new FileReader("/home/tunay/java_parabank_demo/src/main/java/com/java_parabank_demo/config/config.json");
@@ -181,35 +181,4 @@ public class CredentialsAndURLS {
         System.out.println("confirmPW: " + confirmPW);
     }
 }
-
-/*
-
-
-    public static void credentialsAndURLS() throws IOException, ParseException, org.json.simple.parser.ParseException {
-        FileReader reader = new FileReader("/home/tunay/java_parabank_demo/src/main/java/com/java_parabank_demo/config/config.json");
-        JSONParser jsonparser = new JSONParser();
-        Object object = jsonparser.parse(reader);
-        JSONObject configJsonObj = (JSONObject) object;
-
-
-
-        baseURL = (String) configJsonObj.get("baseURL");
-        registerURL = (String) configJsonObj.get("registerURL");
-        Object user1 = configJsonObj.get("users");
-
-        users = user1.toString(); //configJsonObj.get("users"); //TODO object type array
-        firstName = (String) configJsonObj.get("name");
-        lastName = (String) configJsonObj.get("lastName");
-        address = (String) configJsonObj.get("address");
-        state = (String) configJsonObj.get("state");
-        zipCode = (String) configJsonObj.get("zipcode");
-        phone = (String) configJsonObj.get("phone");
-        ssn = (String) configJsonObj.get("ssn");
-        username = (String) configJsonObj.get("username");
-        password = (String) configJsonObj.get("password");
-        confirmPW = (String) configJsonObj.get("confirmPW");
-       // confirmPW = configJsonObj.get("confirmPW").toString();
-    }
-
-   */
 
