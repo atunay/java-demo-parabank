@@ -14,18 +14,28 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
 
-public class PostRequestSignUp {
-    private static final String SignUpURL = "https://parabank.parasoft.com/parabank/register.htm";
-    //private static String SignUpURL;
+public class SignUpRequest {
+    //private static final String SignUpURL = "https://parabank.parasoft.com/parabank/register.htm";
+    private static String SignUpURL;
     private static String responseCode;
     private static String responseBody;
     private static String accessToken;
     private static String authMessage;
     public static void main (String[] args) throws IOException, ParseException, org.json.simple.parser.ParseException {
-     /*String name = "tuni";
-     String email = "a.tunay+1@gmail.com";
-     String password = "123456";*/
 
+    /*
+        String firstName = Tunay;
+        String lastName = Amishev;
+        String address =  Beli brezi;
+        String city = Sofia;
+        String state = BG;
+        String zipCode = 1111;
+        String phone = 088112233;
+        String ssn = 12345;
+        String username = tuni;
+        String password = test123;
+        String confirmPW = test123;
+    */
         CredentialsAndURLS credentialsAndURLS = new CredentialsAndURLS();
         credentialsAndURLS.credentialsAndURLS();
 
@@ -40,23 +50,20 @@ public class PostRequestSignUp {
         String username = credentialsAndURLS.getUsername();
         String password = credentialsAndURLS.getPassword();
         String confirmPW = credentialsAndURLS.getConfirmPW();
+        SignUpURL = credentialsAndURLS.getRegisterURL(); //ако е локална променлива,.теста не минава. Адреса е null???
 
-
-
-
-
-
-
-        /*ReadConfig readConfig = new ReadConfig();
-        readConfig.readConfigFile();
-
-
-        String qaEnv = readConfig.getQaEnv();
-        String email = readConfig.getUsername();
-        String password = readConfig.getPassword();
-        String name = readConfig.getName();*/
-        //SignUpURL = (qaEnv + "/authaccount/registration"); //ако е локална променлива,.теста не минава. Адреса е null???
-        //SignUpURL = (readConfig.getBaseUrl() + "/api/authaccount/registration");
+        System.out.println("registerURL: " + SignUpURL);
+        System.out.println("firstName: " + firstName);
+        System.out.println("lastName: " + lastName);
+        System.out.println("address: " + address);
+        System.out.println("city: " + city);
+        System.out.println("state: " + state);
+        System.out.println("zipCode: " + zipCode);
+        System.out.println("phone: " + phone);
+        System.out.println("ssn: " + ssn);
+        System.out.println("username: " + username);
+        System.out.println("password: " + password);
+        System.out.println("confirmPW: " + confirmPW);
 
         try {
             signUp(firstName, lastName, address, city, state, zipCode, phone, ssn, username, password, confirmPW);
@@ -113,13 +120,10 @@ public class PostRequestSignUp {
 
         return authMessage;
     }
-
-
     public static void printAccessToken() {
         System.out.println(responseCode);
         System.out.println(authMessage);
         System.out.println(responseBody);
         System.out.println(accessToken);
     }
-
 }

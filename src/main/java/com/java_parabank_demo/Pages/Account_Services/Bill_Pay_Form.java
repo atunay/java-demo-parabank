@@ -1,61 +1,101 @@
 package com.java_parabank_demo.Pages.Account_Services;
 
+import com.java_parabank_demo.Pages.Authorization.Log_In_Form;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Bill_Pay_Form {
-    WebDriver driver;
-    public Bill_Pay_Form (WebDriver driver) {this.driver = driver;}
+import java.io.IOException;
+import java.text.ParseException;
+import java.time.Duration;
 
-    By billPayButton = By.linkText("Bill Pay");
-    By payeeNameFieldLocator = By.name("payee.name");
-    By addressFieldLocator = By.name("payee.address.street");
-    By cityFieldLocator = By.name("payee.address.city");
-    By stateFieldLocator = By.name("payee.address.state");
-    By zipCodeFieldLocator = By.name("payee.address.zipCode");
-    By phoneFieldLocator = By.name("payee.phoneNumber");
-    By accountFieldLocator = By.name("payee.accountNumber");
-    By verifyAccountFieldLocator = By.name("verifyAccount");
-    By amountFieldLocator = By.name("amount");
-    By fromAccountDropMenuLocator = By.name("fromAccountId");
-    By sendPaymentSubmitButton = By.cssSelector("button[type='submit']");
+public class Bill_Pay_Form extends Log_In_Form {
+    @FindBy(how = How.LINK_TEXT, using = "Bill Pay")
+    @CacheLookup
+    WebElement billPayButton;
+    @FindBy(how = How.NAME, using = "payee.name")
+    @CacheLookup
+    WebElement payeeNameFieldLocator;
+    @FindBy(how = How.NAME, using = "payee.address.street")
+    @CacheLookup
+    WebElement addressFieldLocator;
+    @FindBy(how = How.NAME, using = "payee.address.city")
+    @CacheLookup
+    WebElement cityFieldLocator;
+    @FindBy(how = How.NAME, using = "payee.address.state")
+    @CacheLookup
+    WebElement stateFieldLocator;
+    @FindBy(how = How.NAME, using = "payee.address.zipCode")
+    @CacheLookup
+    WebElement zipCodeFieldLocator;
+    @FindBy(how = How.NAME, using = "payee.phoneNumber")
+    @CacheLookup
+    WebElement phoneFieldLocator;
+    @FindBy(how = How.NAME, using = "payee.accountNumber")
+    @CacheLookup
+    WebElement accountFieldLocator;
+    @FindBy(how = How.NAME, using = "verifyAccount")
+    @CacheLookup
+    WebElement verifyAccountFieldLocator;
+    @FindBy(how = How.NAME, using = "amount")
+    @CacheLookup
+    WebElement amountFieldLocator;
+    @FindBy(how = How.NAME, using = "fromAccountId")
+    @CacheLookup
+    WebElement fromAccountDropMenuLocator;
+    @FindBy(how = How.XPATH, using = "//*[@id=\"rightPanel\"]/div/div[1]/form/table/tbody/tr[14]/td[2]/input")
+    @CacheLookup
+    WebElement sendPaymentSubmitButton;
+    @FindBy(how = How.XPATH, using = "//*[@id=\"rightPanel\"]/p")
+    @CacheLookup
+    WebElement welcomeText;
 
-    public void GoToTheAccountsOverviewForm(){
-        driver.findElement(billPayButton).click();
-        // Accounts Overview Form is displayed with all of the user's accounts and his Balance and Available Amount
+    public Bill_Pay_Form (WebDriver driver) {
+        super(driver);
     }
 
-    public void EnterPayeeInformationAndClickSendPaymentButton(){
-        driver.findElement(payeeNameFieldLocator).click();
-        driver.findElement(payeeNameFieldLocator).sendKeys();
+    public void checkBillPayForm () throws IOException, ParseException, org.json.simple.parser.ParseException {
 
-        driver.findElement(addressFieldLocator).click();
-        driver.findElement(addressFieldLocator).sendKeys();
+        fillCredentials();
 
-        driver.findElement(cityFieldLocator).click();
-        driver.findElement(cityFieldLocator).sendKeys();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        driver.findElement(stateFieldLocator).click();
-        driver.findElement(stateFieldLocator).sendKeys();
+        wait.until(ExpectedConditions.visibilityOf(billPayButton));
+        billPayButton.click();
+        wait.until(ExpectedConditions.visibilityOf(payeeNameFieldLocator));
+        payeeNameFieldLocator.sendKeys("CEZ");
+        wait.until(ExpectedConditions.visibilityOf(addressFieldLocator));
+        addressFieldLocator.sendKeys("Lenin blv. 10");
+        wait.until(ExpectedConditions.visibilityOf(cityFieldLocator));
+        cityFieldLocator.sendKeys("NY");
+        wait.until(ExpectedConditions.visibilityOf(stateFieldLocator));
+        stateFieldLocator.sendKeys("NY");
+        wait.until(ExpectedConditions.visibilityOf(zipCodeFieldLocator));
+        zipCodeFieldLocator.sendKeys("11703");
+        wait.until(ExpectedConditions.visibilityOf(phoneFieldLocator));
+        phoneFieldLocator.sendKeys("5166348805");
+        wait.until(ExpectedConditions.visibilityOf(accountFieldLocator));
+        accountFieldLocator.sendKeys("595959");
+        wait.until(ExpectedConditions.visibilityOf(verifyAccountFieldLocator));
+        verifyAccountFieldLocator.sendKeys("595959");
+        wait.until(ExpectedConditions.visibilityOf(amountFieldLocator));
+        amountFieldLocator.sendKeys("500");
 
-        driver.findElement(zipCodeFieldLocator).click();
-        driver.findElement(zipCodeFieldLocator).sendKeys();
+        wait.until(ExpectedConditions.visibilityOf(fromAccountDropMenuLocator));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(fromAccountDropMenuLocator).click().build().perform();
+        //fromAccountDropMenuLocator.click();
 
-        driver.findElement(phoneFieldLocator).click();
-        driver.findElement(phoneFieldLocator).sendKeys();
 
-        driver.findElement(accountFieldLocator).click();
-        driver.findElement(accountFieldLocator).sendKeys();
+        wait.until(ExpectedConditions.visibilityOf(sendPaymentSubmitButton));
+        sendPaymentSubmitButton.click();
 
-        driver.findElement(verifyAccountFieldLocator).click();
-        driver.findElement(verifyAccountFieldLocator).sendKeys();
-
-        driver.findElement(amountFieldLocator).click();
-        driver.findElement(amountFieldLocator).sendKeys();
-
-        driver.findElement(fromAccountDropMenuLocator).click();
-        // TO DO!!!!
-
-        driver.findElement(sendPaymentSubmitButton).click();
     }
 }
