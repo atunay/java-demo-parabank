@@ -22,13 +22,13 @@ public class Test_Log_In {
         driver.manage().deleteAllCookies();
     }
 
-    /*@After
+    @After
     public void quitDriver() {
         if (driver != null) {
             driver.quit();
             driver = null;
         }
-    }*/
+    }
 
     @Test
     public void testWithCorrectCredentials () throws IOException, ParseException, org.json.simple.parser.ParseException {
