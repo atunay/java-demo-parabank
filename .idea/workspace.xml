@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b4bc4f-437c-4f84-b252-047295606695" name="Changes" comment="some enhancement" />
+    <list default="true" id="46b4bc4f-437c-4f84-b252-047295606695" name="Changes" comment="some enhancement">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Account_Services/Accounts_Overview_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Account_Services/AccountsOverviewForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Account_Services/Bill_Pay_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Account_Services/BillPayForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Account_Services/Transfer_Funds_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Account_Services/TransferFundsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Authorization/Log_In_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Authorization/LogInForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Authorization/Sign_Up_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Pages/Authorization/SignUpForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/Test_Account_Overview_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/TestAccountOverviewForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/Test_Bill_Pay_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/TestBillPayForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/Test_Log_In.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/TestLogInForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/Test_Sign_Up.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/TestSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/Test_Transfer_Funds_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/TestTransferFundsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/Tests/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/helpers/CredentialsAndURLS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_parabank_demo/helpers/CredentialsAndURLS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Pages/Account_Services/Accounts_Overview_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Pages/Account_Services/Accounts_Overview_Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Pages/Authorization/Log_In_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Pages/Authorization/Log_In_Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Pages/Authorization/Sign_Up_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Pages/Authorization/Sign_Up_Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Tests/Test_Account_Overview_Form.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Tests/Test_Log_In.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Tests/Test_Sign_Up.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/Tests/Test_Sign_Up.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/helpers/CredentialsAndURLS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/java_parabank_demo/helpers/CredentialsAndURLS.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,11 +75,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -63,6 +96,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2UwBmjolvLJysYaGQNpWMtPGooW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,8 +111,23 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Test_Log_In.testWithCredentials2">
-    <configuration name="TestBillPayForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestsValidURL">
+    <configuration name="TestAccountOverviewForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_parabank_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestAccountOverviewForm" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBillPayForm.TestBillPayForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_parabank_demo" />
       <extension name="coverage">
         <pattern>
@@ -88,12 +137,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
       <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestBillPayForm" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="TestBillPayForm" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTransferFundsForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTransferFundsForm.TestTransferFunds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_parabank_demo" />
       <extension name="coverage">
         <pattern>
@@ -103,43 +153,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
       <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestTransferFundsForm" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_Account_Overview_Form" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java_parabank_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.Test_Account_Overview_Form" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_Log_In.testWithCredentials2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java_parabank_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.Test_Log_In" />
-      <option name="METHOD_NAME" value="testWithCredentials2" />
+      <option name="METHOD_NAME" value="TestTransferFunds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTheURLIsCorrect.checkIfTheWebsiteURLIsCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsValidURL" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_parabank_demo" />
       <extension name="coverage">
         <pattern>
@@ -148,7 +168,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestTheURLIsCorrect" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestsValidURL" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsValidURL.checkIfTheWebsiteURLIsCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java_parabank_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestsValidURL" />
       <option name="METHOD_NAME" value="checkIfTheWebsiteURLIsCorrect" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -159,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test_Log_In.testWithCredentials2" />
-        <item itemvalue="JUnit.Test_Account_Overview_Form" />
-        <item itemvalue="JUnit.TestBillPayForm" />
-        <item itemvalue="JUnit.TestTransferFundsForm" />
-        <item itemvalue="TestNG.TestTheURLIsCorrect.checkIfTheWebsiteURLIsCorrect" />
+        <item itemvalue="TestNG.TestsValidURL" />
+        <item itemvalue="TestNG.TestsValidURL.checkIfTheWebsiteURLIsCorrect" />
+        <item itemvalue="JUnit.TestTransferFundsForm.TestTransferFunds" />
+        <item itemvalue="JUnit.TestBillPayForm.TestBillPayForm" />
+        <item itemvalue="JUnit.TestAccountOverviewForm" />
       </list>
     </recent_temporary>
   </component>

@@ -1,6 +1,6 @@
 package com.java_parabank_demo.Pages.Account_Services;
 
-import com.java_parabank_demo.Pages.Authorization.Log_In_Form;
+import com.java_parabank_demo.Pages.Authorization.LogInForm;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.time.Duration;
 
-public class Transfer_Funds_Form extends Log_In_Form {
+public class TransferFundsForm extends LogInForm {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"leftPanel\"]/ul/li[3]/a")
     @CacheLookup
@@ -31,7 +31,7 @@ public class Transfer_Funds_Form extends Log_In_Form {
     @CacheLookup
     WebElement submitTransfer;
 
-    public Transfer_Funds_Form (WebDriver driver) {
+    public TransferFundsForm(WebDriver driver) {
         super(driver);
     }
     public void checkTransferFunds () throws IOException, ParseException, org.json.simple.parser.ParseException, InterruptedException {

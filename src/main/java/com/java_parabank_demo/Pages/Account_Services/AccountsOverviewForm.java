@@ -1,6 +1,6 @@
 package com.java_parabank_demo.Pages.Account_Services;
 
-import com.java_parabank_demo.Pages.Authorization.Log_In_Form;
+import com.java_parabank_demo.Pages.Authorization.LogInForm;
 import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.time.Duration;
 
-public class Accounts_Overview_Form extends Log_In_Form {
+public class AccountsOverviewForm extends LogInForm {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"leftPanel\"]/ul/li[2]/a")
     @CacheLookup
@@ -44,7 +44,7 @@ public class Accounts_Overview_Form extends Log_In_Form {
     @CacheLookup
     WebElement note;
 
-    public Accounts_Overview_Form(WebDriver driver) {
+    public AccountsOverviewForm(WebDriver driver) {
         super(driver);
     }
     public void checkAccountDetails() throws IOException, ParseException, org.json.simple.parser.ParseException {

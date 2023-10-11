@@ -2,7 +2,6 @@ package com.java_parabank_demo.Pages.Authorization;
 
 import com.java_parabank_demo.helpers.CredentialsAndURLS;
 import junit.framework.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -17,7 +16,7 @@ import java.text.ParseException;
 import java.time.Duration;
 import java.util.Objects;
 
-public class Sign_Up_Form {
+public class SignUpForm {
     WebDriver driver;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"customer.firstName\"]")
@@ -50,7 +49,7 @@ public class Sign_Up_Form {
     @FindBy(how = How.XPATH, using = "//*[@id=\"customer.password\"]")
     @CacheLookup
     WebElement password;
-    @FindBy(how = How.XPATH, using = "//*[@id=\"repeatedPassword\"]")
+    @FindBy(how = How.ID, using = "repeatedPassword")
     @CacheLookup
     WebElement confirm;
     @FindBy(how = How.XPATH, using = "//*[@id=\"customerForm\"]/table/tbody/tr[13]/td[2]/input")
@@ -61,7 +60,7 @@ public class Sign_Up_Form {
     WebElement welcomeText;
 
 
-    public Sign_Up_Form(WebDriver driver) {
+    public SignUpForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -94,7 +93,7 @@ public class Sign_Up_Form {
         userName.sendKeys(username);
         String pass = credentialsAndURLS.getPassword();//new
         password.sendKeys(pass);
-        String cnfrm = credentialsAndURLS.getPassword();//new
+        String cnfrm = credentialsAndURLS.getConfirmPW();//new
         confirm.sendKeys(cnfrm);
         register.click();
 

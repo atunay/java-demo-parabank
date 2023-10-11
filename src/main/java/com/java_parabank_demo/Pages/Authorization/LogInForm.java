@@ -16,7 +16,7 @@ import java.text.ParseException;
 import java.time.Duration;
 import java.util.Objects;
 
-public class Log_In_Form {
+public class LogInForm {
     protected WebDriver driver;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"loginPanel\"]/form/div[1]/input")
@@ -31,12 +31,15 @@ public class Log_In_Form {
     @FindBy(how = How.XPATH, using = "//*[@id=\"leftPanel\"]/ul/li[8]/a")
     @CacheLookup
     WebElement logout;
-    @FindBy(how = How.XPATH, using = "//*[@id=\"rightPanel\"]/div/div/h1")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"rightPanel\"]/p")//*[@id="leftPanel"]/p
     @CacheLookup
     WebElement text;
+    @FindBy(how = How.XPATH, using = "//*[@id=\"leftPanel\"]/p")
+    @CacheLookup
+    WebElement welcomeText;
 
 
-    public Log_In_Form(WebDriver driver) {
+    public LogInForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -94,15 +97,19 @@ public class Log_In_Form {
         }
     }
 
-    public void warningTxt3() {
+    public void warningTxt3() throws IOException, ParseException, org.json.simple.parser.ParseException {
+        CredentialsAndURLS credentialsAndURLSObj = new CredentialsAndURLS();
+        credentialsAndURLSObj.credentialsAndURLS();
+        String firstName = credentialsAndURLSObj.getFirstName();
+        String lastName = credentialsAndURLSObj.getLastName();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(text));
-        String actualWarningTxt = text.getText();
-        String expectedWarningTxt = ("Accounts Overview");
-        System.out.println(actualWarningTxt);
-        Assert.assertEquals(expectedWarningTxt, actualWarningTxt);
+        wait.until(ExpectedConditions.visibilityOf(welcomeText));
+        String actualWelcomeTxt = welcomeText.getText();
+        String expectedWelcomeTxt = ("Welcome " + firstName + " " + lastName);
+        System.out.println(actualWelcomeTxt);
+        Assert.assertEquals(expectedWelcomeTxt, actualWelcomeTxt);
 
-        if (Objects.equals(expectedWarningTxt, actualWarningTxt)) {
+        if (Objects.equals(expectedWelcomeTxt, actualWelcomeTxt)) {
             System.out.println("NICE TO SEE YOU AGAIN!");
         }
     }

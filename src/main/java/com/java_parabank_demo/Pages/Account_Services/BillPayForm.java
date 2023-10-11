@@ -1,7 +1,6 @@
 package com.java_parabank_demo.Pages.Account_Services;
 
-import com.java_parabank_demo.Pages.Authorization.Log_In_Form;
-import org.openqa.selenium.By;
+import com.java_parabank_demo.Pages.Authorization.LogInForm;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,14 +8,13 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.time.Duration;
 
-public class Bill_Pay_Form extends Log_In_Form {
+public class BillPayForm extends LogInForm {
     @FindBy(how = How.LINK_TEXT, using = "Bill Pay")
     @CacheLookup
     WebElement billPayButton;
@@ -57,7 +55,7 @@ public class Bill_Pay_Form extends Log_In_Form {
     @CacheLookup
     WebElement welcomeText;
 
-    public Bill_Pay_Form (WebDriver driver) {
+    public BillPayForm(WebDriver driver) {
         super(driver);
     }
 

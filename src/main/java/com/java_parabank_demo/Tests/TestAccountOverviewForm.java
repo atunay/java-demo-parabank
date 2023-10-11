@@ -1,6 +1,6 @@
 package com.java_parabank_demo.Tests;
 
-import com.java_parabank_demo.Pages.Account_Services.Accounts_Overview_Form;
+import com.java_parabank_demo.Pages.Account_Services.AccountsOverviewForm;
 import com.java_parabank_demo.Pages.BrowserFactory.BrowserFactory;
 import org.junit.After;
 import org.junit.Before;
@@ -11,9 +11,9 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.util.concurrent.TimeUnit;
 
-public class Test_Account_Overview_Form {
+public class TestAccountOverviewForm {
     WebDriver driver;
-    Accounts_Overview_Form ObjAccountsOverviewForm;
+    AccountsOverviewForm ObjAccountsOverviewForm;
     @Before
     public void setUp() {
         driver = BrowserFactory.getDriver("Chrome");
@@ -22,17 +22,17 @@ public class Test_Account_Overview_Form {
         driver.manage().deleteAllCookies();
     }
 
-    /*@After
+    @After
     public void quitDriver() {
         if (driver != null) {
             driver.quit();
             driver = null;
         }
-    }*/
+    }
 
     @Test
     public void TestTheAccountDetails () throws IOException, ParseException, org.json.simple.parser.ParseException {
-        ObjAccountsOverviewForm = new Accounts_Overview_Form(driver);
+        ObjAccountsOverviewForm = new AccountsOverviewForm(driver);
         ObjAccountsOverviewForm.checkAccountDetails();
     }
 }

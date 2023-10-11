@@ -29,7 +29,7 @@ public class CredentialsAndURLS {
     public CredentialsAndURLS(){}; //class constructor
 
     public static void credentialsAndURLS() throws IOException, ParseException, org.json.simple.parser.ParseException {
-        FileReader reader = new FileReader("/home/tunay/java_parabank_demo/src/main/java/com/java_parabank_demo/config/config.json");
+        FileReader reader = new FileReader("/home/tunay/java-demo-parabank/src/main/java/com/java_parabank_demo/config/config.json");
         JSONParser jsonparser = new JSONParser();
         Object object = jsonparser.parse(reader);
         JSONObject configJsonObj = (JSONObject) object;
