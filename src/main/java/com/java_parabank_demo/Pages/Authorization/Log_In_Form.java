@@ -101,7 +101,6 @@ public class Log_In_Form {
         String expectedWarningTxt = ("Accounts Overview");
         System.out.println(actualWarningTxt);
         Assert.assertEquals(expectedWarningTxt, actualWarningTxt);
-
         if (Objects.equals(expectedWarningTxt, actualWarningTxt)) {
             System.out.println("NICE TO SEE YOU AGAIN!");
         }

@@ -57,8 +57,8 @@ public class Accounts_Overview_Form extends Log_In_Form {
         accountsOverviewButton.click();
         wait.until(ExpectedConditions.visibilityOf(availableAmount));
         String ActualValue = availableAmount.getText();
-        wait.until(ExpectedConditions.visibilityOf(total));
-        String ExpectedValue = total.getText();
+        /*wait.until(ExpectedConditions.visibilityOf(total));
+        String ExpectedValue = total.getText();*/
         //Assert.assertEquals(ExpectedValue, ActualValue);
         wait.until(ExpectedConditions.visibilityOf(availableAmount));
         wait.until(ExpectedConditions.visibilityOf(note));

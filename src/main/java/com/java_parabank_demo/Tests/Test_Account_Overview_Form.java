@@ -21,15 +21,13 @@ public class Test_Account_Overview_Form {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
     }
-
-    /*@After
+    @After
     public void quitDriver() {
         if (driver != null) {
             driver.quit();
             driver = null;
         }
-    }*/
-
+    }
     @Test
     public void TestTheAccountDetails () throws IOException, ParseException, org.json.simple.parser.ParseException {
         ObjAccountsOverviewForm = new Accounts_Overview_Form(driver);
