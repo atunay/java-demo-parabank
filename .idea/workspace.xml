@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46b4bc4f-437c-4f84-b252-047295606695" name="Changes" comment="some enhancement" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="java-parabank-demo/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2UwBmjolvLJysYaGQNpWMtPGooW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41944444&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.Test_Log_In.testWithCredentials2">
+    <configuration name="TestBillPayForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_parabank_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestBillPayForm" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTransferFundsForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_parabank_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestTransferFundsForm" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_Account_Overview_Form" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_parabank_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.Test_Account_Overview_Form" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_Log_In.testWithCredentials2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_parabank_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.Test_Log_In" />
+      <option name="METHOD_NAME" value="testWithCredentials2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTheURLIsCorrect.checkIfTheWebsiteURLIsCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java_parabank_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_parabank_demo.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java_parabank_demo.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java_parabank_demo.Tests.TestTheURLIsCorrect" />
+      <option name="METHOD_NAME" value="checkIfTheWebsiteURLIsCorrect" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test_Log_In.testWithCredentials2" />
+        <item itemvalue="JUnit.Test_Account_Overview_Form" />
+        <item itemvalue="JUnit.TestBillPayForm" />
+        <item itemvalue="JUnit.TestTransferFundsForm" />
+        <item itemvalue="TestNG.TestTheURLIsCorrect.checkIfTheWebsiteURLIsCorrect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46b4bc4f-437c-4f84-b252-047295606695" name="Changes" comment="" />
+      <created>1693840923661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693840923661</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1694954794705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694954794705</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1694954965466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694954965466</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1694955355324</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694955355324</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1694955926057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694955926057</updated>
+    </task>
+    <task id="LOCAL-00005" summary="enhancement commit">
+      <option name="closed" value="true" />
+      <created>1694956145863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694956145863</updated>
+    </task>
+    <task id="LOCAL-00006" summary="enhancement commit with added tests.">
+      <option name="closed" value="true" />
+      <created>1696954975417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696954975417</updated>
+    </task>
+    <task id="LOCAL-00007" summary="some enhancement">
+      <option name="closed" value="true" />
+      <created>1697002735025</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697002735025</updated>
+    </task>
+    <task id="LOCAL-00008" summary="some enhancement">
+      <option name="closed" value="true" />
+      <created>1697007051716</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697007051716</updated>
+    </task>
+    <task id="LOCAL-00009" summary="some enhancement">
+      <option name="closed" value="true" />
+      <created>1697007261326</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697007261326</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="enhancement commit" />
+    <MESSAGE value="enhancement commit with added tests." />
+    <MESSAGE value="some enhancement" />
+    <option name="LAST_COMMIT_MESSAGE" value="some enhancement" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.SocketException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
